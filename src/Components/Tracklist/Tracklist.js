@@ -6,7 +6,7 @@ function Tracklist(props) {
     <div className={styles.Tracklist}>
       {/* <!-- You will add a map method that renders a set of Track components  --> */}
       {props.userSearchResults.map((track) => (
-          <Track />
+          <Track track={track} key={track} onAdd={props.onAdd} />
         
       ))}
         
