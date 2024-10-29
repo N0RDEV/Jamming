@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import styles from "./App.module.css";
 import SearchResults from "../SearchResults/SearchResults";
-
-function App() {
+function App () {
   const [searchResults, setSearchResults] = useState([
     {
       name: "example track name 1",
@@ -15,26 +14,24 @@ function App() {
       artist: "example track artist 2",
       album: "example track album 2",
       id: 2,
-    },
-    
+    }
   ]);
-
-  return (
-    <div>
-      <h1>
-        Ja<span className={styles.highlight}>mmm</span>ing
-      </h1>
-      <div className={styles.App}>
-        {/* Add a SearchBar component */}
-
-        <div className={styles["App-playlist"]}>
-          {/* Add a SearchResults component */}
-          <SearchResults userSearchResult={searchResults} />
-          {/* Add a Playlist component */}
+    return (
+        <div>
+        <h1>
+          Ja<span className={styles.highlight}>mmm</span>ing
+        </h1>
+        <div className={styles.App}>
+          {/* <!-- Add a SearchBar component --> */}
+          
+          <div className={styles["App-playlist"]}>
+            {/* <!-- Add a SearchResults component --> */}
+            <SearchResults usersearchResult={searchResults} />
+            {/* <!-- Add a Playlist component --> */}
+          </div>
         </div>
       </div>
-    </div>
-  );
+        );
 }
 
 export default App;
