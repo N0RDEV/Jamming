@@ -4,7 +4,7 @@ function SearchBar(props) {
   const [term, setTerm] = useState("");
 
   function passTerm() {
-    props.onSearch(term)
+    props.onSearch(term);
   }
 
   function handleTermChange({ target }) {
