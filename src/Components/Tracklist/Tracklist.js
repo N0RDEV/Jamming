@@ -9,7 +9,7 @@ function Tracklist(props) {
           <Track 
             track={track} 
             key={track.id} 
-            isRemoval={props.isRemoval} 
+            isRemoval={props.isRemove} 
             onAdd={props.onAdd} 
             onRemove={props.onRemove}
             />
